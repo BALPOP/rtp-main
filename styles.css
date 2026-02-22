@@ -3130,11 +3130,25 @@ img, a {
     margin-bottom: 100px;
 }
 
+@media (min-width: 768px) {
+    .site-footer {
+        margin-bottom: 25px;
+    }
+}
+
 .footer-container {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
-    padding-right: 50px;
+    padding-right: 5px;
+    margin-left: 60px;
+}
+
+@media (max-width: 767px) {
+    .footer-container {
+        margin-left: 5px;
+        margin-right: 50px;
+    }
 }
 
 .footer-badge-row {
