@@ -365,7 +365,7 @@ body {
 }
 
 .main-content {
-    padding: 20px 0 100px;
+    padding-top: 20px;
 }
 
 /* ============================================
@@ -3070,8 +3070,8 @@ img, a {
 
 .floating-jogo-responsavel {
     position: fixed;
-    left: 12px;
-    bottom: calc(96px + env(safe-area-inset-bottom));
+    right: 12px;
+    bottom: calc(224px + env(safe-area-inset-bottom));
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -3114,11 +3114,11 @@ img, a {
     .jogo-responsavel-icon { font-size: 12px; }
 }
 
-/* Tablets+ - position mid-left */
+/* Tablets+ - position mid-right */
 @media (min-width: 768px) and (min-height: 820px) {
     .floating-jogo-responsavel {
         bottom: auto;
-        top: 50%;
+        top: calc(50% - 140px);
     }
 }
 
@@ -3131,20 +3131,22 @@ img, a {
     border-top: 1px solid var(--border-color);
     padding: 24px 16px;
     margin-top: 40px;
+    margin-bottom: 100px;
 }
 
 .footer-container {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    padding-right: 50px;
 }
 
 .footer-badge-row {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 12px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 12px;
 }
 
@@ -3154,6 +3156,7 @@ img, a {
     justify-content: center;
     min-width: 48px;
     height: 32px;
+    flex-shrink: 0;
     padding: 0 10px;
     background: linear-gradient(135deg, var(--accent-red), #cc0044);
     color: #ffffff;
@@ -3175,7 +3178,7 @@ img, a {
 .footer-links {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 8px;
 }
