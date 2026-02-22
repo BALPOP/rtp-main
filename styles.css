@@ -1306,10 +1306,6 @@ body {
    GAMES GRID - MOBILE FIRST
    ============================================ */
 
-.games-section {
-    margin-bottom: 50px;
-}
-
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
